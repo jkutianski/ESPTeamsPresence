@@ -298,10 +298,10 @@ void setPresenceAnimation() {
 		setAnimation(0, FX_MODE_BICOLOR_CHASE, YELLOW, GREEN);
 	}
 	if (activity.equals("Busy")) {
-		setAnimation(0, FX_MODE_CHASE_COLOR, RED);
+		setAnimation(0, FX_MODE_STATIC, RED);
 	}
 	if (activity.equals("DoNotDisturb") || activity.equals("UrgentInterruptionsOnly")) {
-		setAnimation(0, FX_MODE_BICOLOR_CHASE, YELLOW, RED);
+		setAnimation(0, FX_MODE_CHASE_COLOR, RED);
 	}
 	if (activity.equals("InACall")) {
 		setAnimation(0, FX_MODE_BREATH, RED);
