@@ -292,16 +292,16 @@ void setPresenceAnimation() {
 		setAnimation(0, FX_MODE_STATIC, GREEN);
 	}
 	if (activity.equals("Away")) {
-		setAnimation(0, FX_MODE_STATIC, YELLOW);
+		setAnimation(0, FX_MODE_BLINK, YELLOW);
 	}
 	if (activity.equals("BeRightBack")) {
-		setAnimation(0, FX_MODE_BICOLOR_CHASE, YELLOW, GREEN);
+		setAnimation(0, FX_MODE_CHASE_BLACKOUT, YELLOW);
 	}
 	if (activity.equals("Busy")) {
 		setAnimation(0, FX_MODE_STATIC, RED);
 	}
 	if (activity.equals("DoNotDisturb") || activity.equals("UrgentInterruptionsOnly")) {
-		setAnimation(0, FX_MODE_CHASE_COLOR, RED);
+		setAnimation(0, FX_MODE_CHASE_BLACKOUT, RED);
 	}
 	if (activity.equals("InACall")) {
 		setAnimation(0, FX_MODE_BREATH, RED);
