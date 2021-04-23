@@ -1,5 +1,5 @@
 /**
- * ESPTeamsPresence -- A standalone Microsoft Teams presence light 
+ * ESPTeamsPresence -- A standalone Microsoft Teams presence light
  *   based on ESP32 and RGB neopixel LEDs.
  *   https://github.com/toblum/ESPTeamsPresence
  *

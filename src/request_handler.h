@@ -1,5 +1,5 @@
 /**
- * ESPTeamsPresence -- A standalone Microsoft Teams presence light 
+ * ESPTeamsPresence -- A standalone Microsoft Teams presence light
  *   based on ESP32 and RGB neopixel LEDs.
  *   https://github.com/toblum/ESPTeamsPresence
  *
@@ -70,7 +70,7 @@ boolean requestJsonApi(JsonDocument& doc, String url, String payload = "", size_
 				client->stop();
 				delete client;
 				client = NULL;
-				
+
 				if (error) {
 					DBG_PRINT(F("deserializeJson() failed: "));
 					DBG_PRINTLN(error.c_str());
@@ -99,7 +99,7 @@ boolean requestJsonApi(JsonDocument& doc, String url, String payload = "", size_
 
 
 /**
- * Handle web requests 
+ * Handle web requests
  */
 
 // Requests to /
@@ -204,7 +204,7 @@ void handleRoot() {
 
 void handleGetSettings() {
 	DBG_PRINTLN("handleGetSettings()");
-	
+
 	const int capacity = JSON_OBJECT_SIZE(13);
 	StaticJsonDocument<capacity> responseDoc;
 	responseDoc["client_id"].set(paramClientIdValue);

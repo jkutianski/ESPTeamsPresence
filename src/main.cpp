@@ -1,5 +1,5 @@
 /**
- * ESPTeamsPresence -- A standalone Microsoft Teams presence light 
+ * ESPTeamsPresence -- A standalone Microsoft Teams presence light
  *   based on ESP32 and RGB neopixel LEDs.
  *   https://github.com/toblum/ESPTeamsPresence
  *
@@ -28,7 +28,7 @@
 // #define DATAPIN 26							// GPIO pin used to drive the LED strip (20 == GPIO/D13) (if not set via build flags)
 // #define DISABLECERTCHECK 1					// Uncomment to disable https certificate checks (if not set via build flags)
 // #define STATUS_PIN LED_BUILTIN				// User builtin LED for status (if not set via build flags)
-#define DEFAULT_POLLING_PRESENCE_INTERVAL "30"	// Default interval to poll for presence info (seconds)
+#define DEFAULT_POLLING_PRESENCE_INTERVAL "10"	// Default interval to poll for presence info (seconds)
 #define DEFAULT_ERROR_RETRY_INTERVAL 30			// Default interval to try again after errors
 #define TOKEN_REFRESH_TIMEOUT 60	 			// Number of seconds until expiration before token gets refreshed
 #define CONTEXT_FILE "/context.json"			// Filename of the context file
@@ -531,7 +531,7 @@ void statemachine() {
 		if (laststate != SMODEPRESENCEREQUESTERROR) {
 			retries = 0;
 		}
-		
+
 		Serial.printf("Polling presence failed, retry #%d.\n", retries);
 		if (retries >= 5) {
 			// Try token refresh
